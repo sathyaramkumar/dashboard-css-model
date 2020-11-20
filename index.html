@@ -56,14 +56,23 @@
                     </form>
                     <div class="task-list-bar row">
                         <h5 class="task-list-heading">Showing 291 Tasks</h5>
-                        <form class="task-list-filter">
-                            <label for="selection-filter">Sort by:</label>
-                            <select id="selection-filter" class="selection-filter">
-                                <option value="Most Popular">Most Popular</option>
-                                <option value="Most old">Most Old</option>
-                                <option value="most rescent">Most Recent</option>
-                            </select>
-                        </form>
+                        <div class="task-list-filter">
+                            <p class="link-title">Sort by:</p>
+                            <div>
+                                <a href="#" class="selection-link">Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                <ul class="dropdown-menu" id="dropdown-menu">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-menu">Most Popular</a>
+                                    </li>
+                                    <li class="dropdown-menu">
+                                        <a href="#" class="dropdown-menu">Most Old</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-menu">Most Recent</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                         <a href="#" class="task-filter-btn">Filter<i class="fa fa-align-center" aria-hidden="true"></i></a>
                     </div>
                     <div class="multi-cards">

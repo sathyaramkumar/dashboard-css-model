@@ -156,17 +156,20 @@ body {
     font-weight: bolder;
 }
 .task-list-filter {
+    display: flex;
     margin-left: auto;
 }
-.task-list-filter label {
-    color: var(--text-muted);
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    color: black;
+    margin-left: 1px;
 }
-.selection-filter {
-    border: none;
-    outline: none;
-    background-color: transparent;
-    margin-right: 20px;
+.selection-link {
+    color: var(--black);
+    margin: 0 10px;
 }
+
 .task-filter-btn {
     text-decoration: none;
     color: var(--black);
