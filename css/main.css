@@ -28,14 +28,13 @@ body {
     display: flex;
     flex-direction: column;
 }
-.sidebar-brand {
-    padding: 20px;
-}
-.sidebar-brand a {
+.sidebar-brand  {
     text-decoration: none;
     font-size: 25px;
     font-weight: bolder;
     color: var(--dark-voiler);
+    padding: 20px;
+    display: block;
 }
 .sidebar-btn {
     text-decoration: none;
