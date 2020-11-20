@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div class="main row">
+        <div class="main">
             <section class="sidebar">
                 <a href="#" class="sidebar-brand">workly</a>
                 <a href="#" class="sidebar-btn">+ New Task</a>
@@ -38,175 +38,173 @@
             </section>
 
             <section class="hero">
-                <div class="container">
-                    <div class="notification-bar row">
-                        <a href="#" class="notification-bar-link">
-                            <i class="fa fa-envelope" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="notification-bar-link">
-                            <i class="fa fa-bell" aria-hidden="true"></i>
-                        </a>
-                        <img src="image/avatar-ali.png" class="notification-bar-avator" alt="ali">
-                        <p class="notification-bar-avator-title">Hat's & Things</p>
+                <div class="notification-bar row">
+                    <a href="#" class="notification-bar-link">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                    <a href="#" class="notification-bar-link">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                    </a>
+                    <img src="image/avatar-ali.png" class="notification-bar-avator" alt="ali">
+                    <p class="notification-bar-avator-title">Hat's & Things</p>
+                </div>
+                <form class="hero-search-form">
+                    <i class="fa fa-search form-search-icon" aria-hidden="true"></i>
+                    <input type="search" class="hero-input" placeholder="Search tasks like product page, product photos">
+                    <button type="submit" class="hero-search-btn">Search</button>
+                </form>
+                <div class="task-list-bar row">
+                    <h5 class="task-list-heading">Showing 291 Tasks</h5>
+                    <div class="task-list-filter">
+                        <p class="link-title">Sort by:</p>
+                        <div>
+                            <a href="#" class="selection-link">Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <ul class="dropdown-menu" id="dropdown-menu">
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-menu">Most Popular</a>
+                                </li>
+                                <li class="dropdown-menu">
+                                    <a href="#" class="dropdown-menu">Most Old</a>
+                                </li>
+                                <li class="dropdown-item">
+                                    <a href="#" class="dropdown-menu">Most Recent</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <form class="hero-search-form">
-                        <i class="fa fa-search form-search-icon" aria-hidden="true"></i>
-                        <input type="search" class="hero-input" placeholder="Search tasks like product page, product photos">
-                        <button type="submit" class="hero-search-btn">Search</button>
-                    </form>
-                    <div class="task-list-bar row">
-                        <h5 class="task-list-heading">Showing 291 Tasks</h5>
-                        <div class="task-list-filter">
-                            <p class="link-title">Sort by:</p>
-                            <div>
-                                <a href="#" class="selection-link">Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                                <ul class="dropdown-menu" id="dropdown-menu">
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-menu">Most Popular</a>
-                                    </li>
-                                    <li class="dropdown-menu">
-                                        <a href="#" class="dropdown-menu">Most Old</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-menu">Most Recent</a>
-                                    </li>
-                                </ul>
+                    <a href="#" class="task-filter-btn">Filter<i class="fa fa-align-center" aria-hidden="true"></i></a>
+                </div>
+                <div class="multi-cards">
+                    <div class="card">
+                        <small class="card-sub-title">2 credits</small>
+                        <h1 class="card-title">
+                            Increase confidence with TrustPilot reviews
+                        </h1>
+                        <span class="card-badge">Integrations</span>
+                        <p class="card-text">
+                            Some Kind of short description can go here to 
+                            better explain the recommended task.
+                        </p>
+                        <div class="card-footer">
+                            <time>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                2 Days
+                            </time>
+                            <div class="card-footer-avators">
+                                <img src="image/avatar-ali.png" alt="ali">
+                                <img src="image/avatar-anisha.png" alt="anisha">
+                                <img src="image/avatar-richard.png" alt="richard">
+                                <span>16</span>
                             </div>
                         </div>
-                        <a href="#" class="task-filter-btn">Filter<i class="fa fa-align-center" aria-hidden="true"></i></a>
                     </div>
-                    <div class="multi-cards">
-                        <div class="card">
-                            <small class="card-sub-title">2 credits</small>
-                            <h1 class="card-title">
-                                Increase confidence with TrustPilot reviews
-                            </h1>
-                            <span class="card-badge">Integrations</span>
-                            <p class="card-text">
-                                Some Kind of short description can go here to 
-                                better explain the recommended task.
-                            </p>
-                            <div class="card-footer">
-                                <time>
-                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    2 Days
-                                </time>
-                                <div class="card-footer-avators">
-                                    <img src="image/avatar-ali.png" alt="ali">
-                                    <img src="image/avatar-anisha.png" alt="anisha">
-                                    <img src="image/avatar-richard.png" alt="richard">
-                                    <span>16</span>
-                                </div>
+                    <div class="card">
+                        <small class="card-sub-title">2 credits</small>
+                        <h1 class="card-title">
+                            Be social - Sell your stock directly on Instagram
+                        </h1>
+                        <span class="card-badge">Marketing&Sales</span>
+                        <p class="card-text">
+                            Some kind of shor description can go here to better explain
+                            the recommended task.
+                        </p>
+                        <div class="card-footer">
+                            <time>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                1 Days
+                            </time>
+                            <div class="card-footer-avators">
+                                <img src="image/avatar-shanai.png" alt="shanai">
+                                <img src="image/avatar-anisha.png" alt="anisha">
+                                <img src="image/avatar-richard.png" alt="richard">
+                                <span>12</span>
                             </div>
                         </div>
-                        <div class="card">
-                            <small class="card-sub-title">2 credits</small>
-                            <h1 class="card-title">
-                                Be social - Sell your stock directly on Instagram
-                            </h1>
-                            <span class="card-badge">Marketing&Sales</span>
-                            <p class="card-text">
-                                Some kind of shor description can go here to better explain
-                                the recommended task.
-                            </p>
-                            <div class="card-footer">
-                                <time>
-                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    1 Days
-                                </time>
-                                <div class="card-footer-avators">
-                                    <img src="image/avatar-shanai.png" alt="shanai">
-                                    <img src="image/avatar-anisha.png" alt="anisha">
-                                    <img src="image/avatar-richard.png" alt="richard">
-                                    <span>12</span>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <small class="card-sub-title">2 credits</small>
+                        <h1 class="card-title">
+                            Increase confidencd with TrustPilot reviews
+                        </h1>
+                        <span class="card-badge">Integrations</span>
+                        <p class="card-text">
+                            Some kind of shor description can go here to better explain
+                            the recommended task.
+                        </p>
+                        <div class="card-footer">
+                            <time>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                2 Days
+                            </time>
+                            <div class="card-footer-avators">
+                                <img src="image/avatar-shanai.png" alt="shanai">
+                                <img src="image/avatar-anisha.png" alt="anisha">
+                                <img src="image/avatar-richard.png" alt="richard">
+                                <span>16</span>
                             </div>
                         </div>
-                        <div class="card">
-                            <small class="card-sub-title">2 credits</small>
-                            <h1 class="card-title">
-                                Increase confidencd with TrustPilot reviews
-                            </h1>
-                            <span class="card-badge">Integrations</span>
-                            <p class="card-text">
-                                Some kind of shor description can go here to better explain
-                                the recommended task.
-                            </p>
-                            <div class="card-footer">
-                                <time>
-                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    2 Days
-                                </time>
-                                <div class="card-footer-avators">
-                                    <img src="image/avatar-shanai.png" alt="shanai">
-                                    <img src="image/avatar-anisha.png" alt="anisha">
-                                    <img src="image/avatar-richard.png" alt="richard">
-                                    <span>16</span>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <small class="card-sub-title">2 credits</small>
+                        <h1 class="card-title">
+                            Increase the speed of your site on mobile & desktop
+                        </h1>
+                        <span class="card-badge">Optimization</span>
+                        <p class="card-text">
+                            Some kind of shor description can go here to better explain
+                            the recommended task.
+                        </p>
+                        <div class="card-footer">
+                            <time>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                3 Days
+                            </time>
+                            <div class="card-footer-avators">
+                                <img src="image/avatar-shanai.png" alt="shanai">
+                                <img src="image/avatar-anisha.png" alt="anisha">
+                                <img src="image/avatar-richard.png" alt="richard">
+                                <span>16</span>
                             </div>
                         </div>
-                        <div class="card">
-                            <small class="card-sub-title">2 credits</small>
-                            <h1 class="card-title">
-                                Increase the speed of your site on mobile & desktop
-                            </h1>
-                            <span class="card-badge">Optimization</span>
-                            <p class="card-text">
-                                Some kind of shor description can go here to better explain
-                                the recommended task.
-                            </p>
-                            <div class="card-footer">
-                                <time>
-                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    3 Days
-                                </time>
-                                <div class="card-footer-avators">
-                                    <img src="image/avatar-shanai.png" alt="shanai">
-                                    <img src="image/avatar-anisha.png" alt="anisha">
-                                    <img src="image/avatar-richard.png" alt="richard">
-                                    <span>16</span>
-                                </div>
-                            </div>
+                    </div>
+                    <div class="card">
+                        <small class="card-sub-title">2 credits</small>
+                        <h1 class="card-title">
+                            Increase confidence with TrustPilot reviews
+                        </h1>
+                        <span class="card-badge">Integrations</span>
+                        <p class="card-text">
+                            Some kind of shor description can go here to better explain
+                            the recommended task.
+                        </p>
+                        <div class="card-footer">
+                            <time>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                2 Days
+                            </time>
+                            <a href="#" class="card-footer-link">+Add to Queue</a>
                         </div>
-                        <div class="card">
-                            <small class="card-sub-title">2 credits</small>
-                            <h1 class="card-title">
-                                Increase confidence with TrustPilot reviews
-                            </h1>
-                            <span class="card-badge">Integrations</span>
-                            <p class="card-text">
-                                Some kind of shor description can go here to better explain
-                                the recommended task.
-                            </p>
-                            <div class="card-footer">
-                                <time>
-                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    2 Days
-                                </time>
-                                <a href="#" class="card-footer-link">+Add to Queue</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <small class="card-sub-title">2 credits</small>
-                            <h1 class="card-title">
-                                Increase the speed of your site on mobile & desktop
-                            </h1>
-                            <span class="card-badge">Optimization</span>
-                            <p class="card-text">
-                                Some kind of shor description can go here to better explain
-                                the recommended task.
-                            </p>
-                            <div class="card-footer">
-                                <time>
-                                    <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                    3 Days
-                                </time>
-                                <div class="card-footer-avators">
-                                    <img src="image/avatar-shanai.png" alt="shanai">
-                                    <img src="image/avatar-anisha.png" alt="anisha">
-                                    <img src="image/avatar-richard.png" alt="richard">
-                                    <span>16</span>
-                                </div>
+                    </div>
+                    <div class="card">
+                        <small class="card-sub-title">2 credits</small>
+                        <h1 class="card-title">
+                            Increase the speed of your site on mobile & desktop
+                        </h1>
+                        <span class="card-badge">Optimization</span>
+                        <p class="card-text">
+                            Some kind of shor description can go here to better explain
+                            the recommended task.
+                        </p>
+                        <div class="card-footer">
+                            <time>
+                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                                3 Days
+                            </time>
+                            <div class="card-footer-avators">
+                                <img src="image/avatar-shanai.png" alt="shanai">
+                                <img src="image/avatar-anisha.png" alt="anisha">
+                                <img src="image/avatar-richard.png" alt="richard">
+                                <span>16</span>
                             </div>
                         </div>
                     </div>

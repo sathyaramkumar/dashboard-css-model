@@ -25,8 +25,12 @@ body {
 }
 .sidebar {
     padding: 20px;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: var(--white);
 }
 .sidebar-brand  {
     text-decoration: none;
@@ -77,18 +81,16 @@ body {
     padding: 20px;
     text-align: center;
     background-color: var(--field-background);
-    margin-top: auto;
+    position: absolute;
+    bottom: 60px;
 }
 
 /* hero section */
 .hero {
-    width: 1200px;
-    margin-top: 40px;
+    width: auto;
+    padding: 20px 50px;
+    margin-left: 300px;
     background-color: var(--field-background);
-}
-.container {
-    width: 1100px;
-    margin: auto;
 }
 .notification-bar {
     -webkit-box-pack: end;
@@ -126,13 +128,15 @@ body {
     padding: 5px 10px;
     margin: 30px auto;
     border-radius: 5px;
+    display: flex;
+    align-items: center;
 }
 .form-search-icon {
     font-size: 25px;
     color: var(--text-muted);
 }
 .hero-input {
- width: 970px;
+ width: 330px;
  height: 50px;
  padding: 5px;
  font-size: 15px;
@@ -145,6 +149,7 @@ body {
     outline: none;
     background-color: var(--field-background);
     color: var(--white);
+    margin-left: auto;
 }
 
 /* task-list-bar */
