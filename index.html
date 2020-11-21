@@ -16,13 +16,14 @@
     <body>
         <div class="main">
 
-                <input type="checkbox" class="toggler">
+                <!-- <input type="checkbox" class="toggler">
                 <div class="hamburger-background">
                     <div class="hamburger">
                         <div class="hamburger-line"></div>
                     </div>
-                </div>
-                <div class="sidebar">
+                </div> -->
+                <div class="sidebar show" id="mySidebar">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                     <a href="#" class="sidebar-brand">workly</a>
                     <a href="#" class="sidebar-btn">+ New Task</a>
                     <nav class="nav">
@@ -37,15 +38,27 @@
                                 <a href="#" class="nav-link">Task Catalog</a>
                             </li>
                             <li class="nav-item">
-                                <a href="#" class="nav-link">Community <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <a href="#dropdown-show" class="nav-link">Community <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                                <ul class="show" id="dropdown-show">
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">Community-1</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">Community-2</a>
+                                    </li>
+                                    <li class="dropdown-item">
+                                        <a href="#" class="dropdown-link">Community-3</a>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                     </nav>
                     <p class="sidebar-footer">you have <a href="#">Workly.com</a></p>
                 </div>
 
-            <section class="hero">
+            <div class="hero" id="myMain">
                 <div class="notification-bar row">
+                    <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>  
                     <a href="#" class="notification-bar-link">
                         <i class="fa fa-envelope" aria-hidden="true"></i>
                     </a>
@@ -65,18 +78,12 @@
                     <div class="task-list-filter">
                         <p class="link-title">Sort by:</p>
                         <div>
-                            <a href="#" class="selection-link">Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <ul class="dropdown-menu" id="dropdown-menu">
-                                <li class="dropdown-item">
-                                    <a href="#" class="dropdown-menu">Most Popular</a>
-                                </li>
-                                <li class="dropdown-menu">
-                                    <a href="#" class="dropdown-menu">Most Old</a>
-                                </li>
-                                <li class="dropdown-item">
-                                    <a href="#" class="dropdown-menu">Most Recent</a>
-                                </li>
-                            </ul>
+                            <a href="#dropdown-menu-toggler" class="selection-link">Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                            <div class="dropdown-menu" id="dropdown-menu-toggler">
+                                <a href="#" class="dropdown-menu">Most Popular</a>
+                                <a href="#" class="dropdown-menu">Most Old</a>
+                                <a href="#" class="dropdown-menu">Most Recent</a>
+                            </div>
                         </div>
                     </div>
                     <a href="#" class="task-filter-btn">Filter<i class="fa fa-align-center" aria-hidden="true"></i></a>
@@ -216,7 +223,23 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
+        <script>
+            // function openNav() {
+            //   document.getElementById("mySidebar").style.width = "250px";
+            //   document.getElementById("myMain").style.marginLeft = "250px";
+            // }
+            
+            // function closeNav() {
+            //   document.getElementById("mySidebar").style.width = "0";
+            //   document.getElementById("myMain").style.marginLeft= "0";
+            // }
+            document.querySelector(".openbtn").onclick( ()=>{
+
+            document.getElementById("mySidebar").classlist.toggle("show")
+
+            })
+            </script>
     </body>
 </html>
