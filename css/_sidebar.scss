@@ -1,9 +1,9 @@
 .sidebar {
   background-color: var(--white);
   height: 100vh;
-  position: relative;
   z-index: 1;
   padding-top: 10px;
+  
 
   &.collapsed {
       display: none;
