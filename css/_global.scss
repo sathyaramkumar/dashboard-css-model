@@ -1,0 +1,94 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  font-family: "Karla", sans-serif;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+// ====================================
+
+.flex {
+  &-row {
+    display: flex;
+    flex-direction: row;
+
+    .ai {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+      &-stretch {
+        align-items: stretch;
+      }
+
+      .jc {
+        &-start {
+            justify-content: start;
+        }
+        &-center {
+          justify-content: center;
+        }
+        &-end {
+            justify-content: end;
+        }
+        &-between {
+            justify-content: space-between;
+        }
+      }
+    }
+  }
+
+  &-col {
+    display: flex;
+    flex-direction: column;
+
+    .ai {
+      &-center {
+        align-items: center;
+      }
+      &-start {
+        align-items: flex-start;
+      }
+      &-end {
+        align-items: flex-end;
+      }
+      &-stretch {
+        align-items: stretch;
+      }
+    }
+  }
+
+  &-wrap {
+    flex-wrap: wrap;
+  }
+
+  &-nowrap {
+    flex-wrap: nowrap;
+  }
+}
+
+.grid {
+    display: grid;
+}

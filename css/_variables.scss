@@ -1,0 +1,48 @@
+:root {
+    --dark-voiler: #3a0ca3;
+    --voilet: #5a189a;
+    --voilet-background: #c19ee0;
+    --red: #d60404;
+    --red-background: #f9a7a780;
+    --green: #88db02;
+    --green-background: #d8f3dca2;
+    --blue: #00d5ff;
+    --blue-background: #86e7fa21;
+    --text-muted: #6c757d;
+    --field-background: #eff1f3;
+    --black: black;
+    --white: white;
+}
+
+.link{
+
+}
+
+
+.btn{
+ 
+}
+.card:nth-child(1) .card-badge {
+    color: var(--blue);
+    background-color: var(--blue-background);
+}
+.card:nth-child(2) .card-badge {
+    color: var(--red);
+    background-color: var(--red-background);
+}
+.card:nth-child(3) .card-badge {
+    color: var(--blue);
+    background-color: var(--blue-background);
+}
+.card:nth-child(4) .card-badge {
+    color: var(--green);
+    background-color: var(--green-background);
+}
+.card:nth-child(5) .card-badge {
+    color: var(--blue);
+    background-color: var(--blue-background);
+}
+.card:nth-child(6) .card-badge {
+    color: var(--green);
+    background-color: var(--green-background);
+}
