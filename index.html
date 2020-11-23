@@ -1,245 +1,258 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>dashboard</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="with=device-width , initial-scale=1.0">
-        <!-- font cdn -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" 
-        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-         <!-- font-cdn -->
-         <link rel="preconnect" href="https://fonts.gstatic.com">
-         <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
-        <!-- css link -->
-        <link rel="stylesheet" href="css/main.css">
-    </head>
-    <body>
-        <div class="main">
+  <head>
+    <title>dashboard</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="with=device-width , initial-scale=1.0" />
+    <!-- font cdn -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <!-- font-cdn -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css link -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="sidebar collapsed" id="mySidebar">
+        <a href="#" class="sidebar-brand">workly</a>
+        <a href="#" class="sidebar-btn">+ New Task</a>
+        <nav class="navbar">
+          <ul class="sidebar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">My Tasks <span>0</span></a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Task Catalog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#dropdown-show" class="nav-link"
+                >Community <i class="fa fa-caret-down" aria-hidden="true"></i
+              ></a>
+              <ul class="dropdown-nav">
+                <li class="dropdown-nav-item">
+                  <a href="#" class="dropdown-nav-link">Community-1</a>
+                </li>
+                <li class="dropdown-nav-item">
+                  <a href="#" class="dropdown-nav-link">Community-2</a>
+                </li>
+                <li class="dropdown-nav-item">
+                  <a href="#" class="dropdown-nav-link">Community-3</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <p class="sidebar-footer">you have <a href="#">Workly.com</a></p>
+      </div>
 
-                <!-- <input type="checkbox" class="toggler">
-                <div class="hamburger-background">
-                    <div class="hamburger">
-                        <div class="hamburger-line"></div>
-                    </div>
-                </div> -->
-                <div class="sidebar show" id="mySidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                    <a href="#" class="sidebar-brand">workly</a>
-                    <a href="#" class="sidebar-btn">+ New Task</a>
-                    <nav class="nav">
-                        <ul class="sidebar-nav">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">My Tasks <span>0</span></a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Task Catalog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#dropdown-show" class="nav-link">Community <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-                                <ul class="show" id="dropdown-show">
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">Community-1</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">Community-2</a>
-                                    </li>
-                                    <li class="dropdown-item">
-                                        <a href="#" class="dropdown-link">Community-3</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <p class="sidebar-footer">you have <a href="#">Workly.com</a></p>
-                </div>
-
-            <div class="hero" id="myMain">
-                <div class="notification-bar row">
-                    <button class="openbtn" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>  
-                    <a href="#" class="notification-bar-link">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                    </a>
-                    <a href="#" class="notification-bar-link">
-                        <i class="fa fa-bell" aria-hidden="true"></i>
-                    </a>
-                    <img src="image/avatar-ali.png" class="notification-bar-avator" alt="ali">
-                    <p class="notification-bar-avator-title">Hat's & Things</p>
-                </div>
-                <form class="hero-search-form">
-                    <i class="fa fa-search form-search-icon" aria-hidden="true"></i>
-                    <input type="search" class="hero-input" placeholder="Search tasks like product page, product photos">
-                    <button type="submit" class="hero-search-btn">Search</button>
-                </form>
-                <div class="task-list-bar row">
-                    <h5 class="task-list-heading">Showing 291 Tasks</h5>
-                    <div class="task-list-filter">
-                        <p class="link-title">Sort by:</p>
-                        <div>
-                            <a href="#dropdown-menu-toggler" class="selection-link">Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i></a>
-                            <div class="dropdown-menu" id="dropdown-menu-toggler">
-                                <a href="#" class="dropdown-menu">Most Popular</a>
-                                <a href="#" class="dropdown-menu">Most Old</a>
-                                <a href="#" class="dropdown-menu">Most Recent</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="task-filter-btn">Filter<i class="fa fa-align-center" aria-hidden="true"></i></a>
-                </div>
-                <div class="multi-cards">
-                    <div class="card">
-                        <small class="card-sub-title">2 credits</small>
-                        <h1 class="card-title">
-                            Increase confidence with TrustPilot reviews
-                        </h1>
-                        <span class="card-badge">Integrations</span>
-                        <p class="card-text">
-                            Some Kind of short description can go here to 
-                            better explain the recommended task.
-                        </p>
-                        <div class="card-footer">
-                            <time>
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                2 Days
-                            </time>
-                            <div class="card-footer-avators">
-                                <img src="image/avatar-ali.png" alt="ali">
-                                <img src="image/avatar-anisha.png" alt="anisha">
-                                <img src="image/avatar-richard.png" alt="richard">
-                                <span>16</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <small class="card-sub-title">2 credits</small>
-                        <h1 class="card-title">
-                            Be social - Sell your stock directly on Instagram
-                        </h1>
-                        <span class="card-badge">Marketing&Sales</span>
-                        <p class="card-text">
-                            Some kind of shor description can go here to better explain
-                            the recommended task.
-                        </p>
-                        <div class="card-footer">
-                            <time>
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                1 Days
-                            </time>
-                            <div class="card-footer-avators">
-                                <img src="image/avatar-shanai.png" alt="shanai">
-                                <img src="image/avatar-anisha.png" alt="anisha">
-                                <img src="image/avatar-richard.png" alt="richard">
-                                <span>12</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <small class="card-sub-title">2 credits</small>
-                        <h1 class="card-title">
-                            Increase confidencd with TrustPilot reviews
-                        </h1>
-                        <span class="card-badge">Integrations</span>
-                        <p class="card-text">
-                            Some kind of shor description can go here to better explain
-                            the recommended task.
-                        </p>
-                        <div class="card-footer">
-                            <time>
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                2 Days
-                            </time>
-                            <div class="card-footer-avators">
-                                <img src="image/avatar-shanai.png" alt="shanai">
-                                <img src="image/avatar-anisha.png" alt="anisha">
-                                <img src="image/avatar-richard.png" alt="richard">
-                                <span>16</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <small class="card-sub-title">2 credits</small>
-                        <h1 class="card-title">
-                            Increase the speed of your site on mobile & desktop
-                        </h1>
-                        <span class="card-badge">Optimization</span>
-                        <p class="card-text">
-                            Some kind of shor description can go here to better explain
-                            the recommended task.
-                        </p>
-                        <div class="card-footer">
-                            <time>
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                3 Days
-                            </time>
-                            <div class="card-footer-avators">
-                                <img src="image/avatar-shanai.png" alt="shanai">
-                                <img src="image/avatar-anisha.png" alt="anisha">
-                                <img src="image/avatar-richard.png" alt="richard">
-                                <span>16</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <small class="card-sub-title">2 credits</small>
-                        <h1 class="card-title">
-                            Increase confidence with TrustPilot reviews
-                        </h1>
-                        <span class="card-badge">Integrations</span>
-                        <p class="card-text">
-                            Some kind of shor description can go here to better explain
-                            the recommended task.
-                        </p>
-                        <div class="card-footer">
-                            <time>
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                2 Days
-                            </time>
-                            <a href="#" class="card-footer-link">+Add to Queue</a>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <small class="card-sub-title">2 credits</small>
-                        <h1 class="card-title">
-                            Increase the speed of your site on mobile & desktop
-                        </h1>
-                        <span class="card-badge">Optimization</span>
-                        <p class="card-text">
-                            Some kind of shor description can go here to better explain
-                            the recommended task.
-                        </p>
-                        <div class="card-footer">
-                            <time>
-                                <i class="fa fa-calendar-o" aria-hidden="true"></i>
-                                3 Days
-                            </time>
-                            <div class="card-footer-avators">
-                                <img src="image/avatar-shanai.png" alt="shanai">
-                                <img src="image/avatar-anisha.png" alt="anisha">
-                                <img src="image/avatar-richard.png" alt="richard">
-                                <span>16</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="main" id="myMain">
+        <div class="notification-bar flex-row ai-center">
+          <button class="openBtn">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </button>
+          <a href="#" class="notification-bar-link">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </a>
+          <a href="#" class="notification-bar-link">
+            <i class="fa fa-bell" aria-hidden="true"></i>
+          </a>
+          <div class="avatar flex-row ai-center">
+            <img
+              src="image/avatar-ali.png"
+              class="notification-bar-avatar-img"
+              alt="ali"
+            />
+            <p class="notification-bar-avatar-title">Hat's & Things</p>
+          </div>
         </div>
-        <script>
-            // function openNav() {
-            //   document.getElementById("mySidebar").style.width = "250px";
-            //   document.getElementById("myMain").style.marginLeft = "250px";
-            // }
-            
-            // function closeNav() {
-            //   document.getElementById("mySidebar").style.width = "0";
-            //   document.getElementById("myMain").style.marginLeft= "0";
-            // }
-            document.querySelector(".openbtn").onclick( ()=>{
+        <form class="hero-search-form">
+          <div class="form-group">
+              <label for="search">
+                  
+              </label>
+            <input
+              type="search"
+              class="hero-input"
+              id="search"
+              placeholder="Search tasks like product page, product photos"
+            />
+          </div>
 
-            document.getElementById("mySidebar").classlist.toggle("show")
+          <button type="submit" class="hero-search-btn">Search</button>
+        </form>
+        <div class="filter flex-row .ai-center">
+          <h5 class="filter-heading">Showing 291 Tasks</h5>
+          <div class="filter-filter flex-row">
+            <p class="link-title">Sort by:</p>
+            <div class="dropdown-option">
+              <a href="#dropdown-menu-toggler" class="selection-link"
+                >Most Popular <i class="fa fa-angle-down" aria-hidden="true"></i
+              ></a>
+              <div class="dropdown-option-menu" id="dropdown-menu-toggler">
+                <a href="#" class="dropdown-option-link">Most Popular</a>
+                <a href="#" class="dropdown-option-link">Most Old</a>
+                <a href="#" class="dropdown-option-link">Most Recent</a>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="filter-btn"
+            >Filter<i class="fa fa-align-center" aria-hidden="true"></i
+          ></a>
+        </div>
+        <div class="multi-cards grid">
+          <div class="card">
+            <small class="card-sub-title">2 credits</small>
+            <h1 class="card-title">
+              Increase confidence with TrustPilot reviews
+            </h1>
+            <span class="card-badge">Integrations</span>
+            <p class="card-text">
+              Some Kind of short description can go here to better explain the
+              recommended task.
+            </p>
+            <div class="card-footer flex-row">
+              <time>
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                2 Days
+              </time>
+              <div class="card-footer-avators">
+                <img src="image/avatar-ali.png" alt="ali" />
+                <img src="image/avatar-anisha.png" alt="anisha" />
+                <img src="image/avatar-richard.png" alt="richard" />
+                <span>16</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <small class="card-sub-title">2 credits</small>
+            <h1 class="card-title">
+              Be social - Sell your stock directly on Instagram
+            </h1>
+            <span class="card-badge">Marketing&Sales</span>
+            <p class="card-text">
+              Some kind of shor description can go here to better explain the
+              recommended task.
+            </p>
+            <div class="card-footer flex-row">
+              <time>
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                1 Days
+              </time>
+              <div class="card-footer-avators">
+                <img src="image/avatar-shanai.png" alt="shanai" />
+                <img src="image/avatar-anisha.png" alt="anisha" />
+                <img src="image/avatar-richard.png" alt="richard" />
+                <span>12</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <small class="card-sub-title">2 credits</small>
+            <h1 class="card-title">
+              Increase confidencd with TrustPilot reviews
+            </h1>
+            <span class="card-badge">Integrations</span>
+            <p class="card-text">
+              Some kind of shor description can go here to better explain the
+              recommended task.
+            </p>
+            <div class="card-footer flex-row">
+              <time>
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                2 Days
+              </time>
+              <div class="card-footer-avators">
+                <img src="image/avatar-shanai.png" alt="shanai" />
+                <img src="image/avatar-anisha.png" alt="anisha" />
+                <img src="image/avatar-richard.png" alt="richard" />
+                <span>16</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <small class="card-sub-title">2 credits</small>
+            <h1 class="card-title">
+              Increase the speed of your site on mobile & desktop
+            </h1>
+            <span class="card-badge">Optimization</span>
+            <p class="card-text">
+              Some kind of shor description can go here to better explain the
+              recommended task.
+            </p>
+            <div class="card-footer flex-row">
+              <time>
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                3 Days
+              </time>
+              <div class="card-footer-avators">
+                <img src="image/avatar-shanai.png" alt="shanai" />
+                <img src="image/avatar-anisha.png" alt="anisha" />
+                <img src="image/avatar-richard.png" alt="richard" />
+                <span>16</span>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <small class="card-sub-title">2 credits</small>
+            <h1 class="card-title">
+              Increase confidence with TrustPilot reviews
+            </h1>
+            <span class="card-badge">Integrations</span>
+            <p class="card-text">
+              Some kind of shor description can go here to better explain the
+              recommended task.
+            </p>
+            <div class="card-footer flex-row">
+              <time>
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                2 Days
+              </time>
+              <a href="#" class="card-footer-link">+Add to Queue</a>
+            </div>
+          </div>
+          <div class="card">
+            <small class="card-sub-title">2 credits</small>
+            <h1 class="card-title">
+              Increase the speed of your site on mobile & desktop
+            </h1>
+            <span class="card-badge">Optimization</span>
+            <p class="card-text">
+              Some kind of shor description can go here to better explain the
+              recommended task.
+            </p>
+            <div class="card-footer flex-row">
+              <time>
+                <i class="fa fa-calendar-o" aria-hidden="true"></i>
+                3 Days
+              </time>
+              <div class="card-footer-avators">
+                <img src="image/avatar-shanai.png" alt="shanai" />
+                <img src="image/avatar-anisha.png" alt="anisha" />
+                <img src="image/avatar-richard.png" alt="richard" />
+                <span>16</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-            })
-            </script>
-    </body>
+    <script>
+      document.querySelector(".openBtn").addEventListener("click", () => {
+        document.getElementById("mySidebar").classList.toggle("collapsed");
+      });
+    </script>
+  </body>
 </html>
